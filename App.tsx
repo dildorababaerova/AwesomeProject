@@ -8,10 +8,12 @@ import {
   View,
 } from 'react-native';
 
-export default function App() {
-  const [hidden, setHidden] = useState(false);
-  const changeStatusBarVisibility = () => setHidden(!hidden);
 
+
+
+export default function App() {
+  const [hidden, setHidden] = useState(false);  
+  const changeStatusBarVisibility = () => setHidden(!hidden);
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar
@@ -45,3 +47,4 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
 });
+
